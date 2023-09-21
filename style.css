@@ -1,0 +1,49 @@
+body {
+    padding: 60px;
+}
+
+main {
+    width: 600px;
+}
+
+fieldset {
+    margin-bottom: 20px;
+    border-radius: 8px;
+    padding: 20px;
+}
+
+fieldset div {
+    display: flex;
+    align-items: center;
+    margin-bottom: 12px;
+}
+
+legend {
+    text-transform: uppercase;
+    font-size: 0.9em;
+    font-weight: 400;
+}
+
+label {
+    flex-basis: 80px;
+    flex-shrink: 0;
+}
+
+input {
+    flex-grow: 1;
+    border: solid 1px black;
+    padding: 4px;
+    font-size: 0.8em;
+
+}
+
+button {
+    background-color: cadetblue;
+    border: solid 1px black;
+    border-radius: 4px;
+    padding: 8px 12px;
+    color: white;
+    font-size: 0.7em;
+    font-weight: 400;
+    text-transform: uppercase;
+}
