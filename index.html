@@ -3,6 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="icomoon/style.css">
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
     <title>A-Level</title>
 </head>
 <body>
@@ -13,7 +15,7 @@
 
                 <div>
                     <label for="name">Ім'я <em>*</em></label>
-                    <input type="text" name="name" id="name">
+                    <input type="text" name="name" id="name" required>
                 </div>
 
                 <div>
@@ -23,7 +25,28 @@
 
                 <div>
                     <label for="tel">Телефон</label>
-                    <input type="tel" name="tel" id="tel">
+                    <input type="tel" name="tel" id="tel"
+                           pattern="\([0-9]{3}\) [0-9]{3} [0-9]{4}" placeholder="(050) 999 9999">
+                </div>
+
+                <div>
+                    <label for="countries">Країни</label>
+                    <select name="countries" id="countries">
+                        <option value="ukraine">Ukraine</option>
+                        <option value="france">France</option>
+                        <option value="italy">Italy</option>
+                    </select>
+                </div>
+
+                <div>
+                    <label for="text">Текст</label>
+                    <textarea name="text" id="text"></textarea>
+                </div>
+
+                <div id="checkbox">
+                    <label for="check_1"><input type="checkbox" name="check_1" id="check_1"> Check 1</label>
+                    <label for="check_2"><input type="checkbox" name="check_1" id="check_2"> Check 2</label>
+                    <label for="check_3"><input type="checkbox" name="check_1" id="check_3"> Check 3</label>
                 </div>
             </fieldset>
             <button type="submit">Відправити</button>
